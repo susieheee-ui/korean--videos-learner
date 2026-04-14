@@ -21,6 +21,7 @@ const tooltip = $('tooltip');
 const loadingOverlay = $('loadingOverlay');
 const loadingText = $('loadingText');
 const playerPlaceholder = $('playerPlaceholder');
+const backBtn = $('backBtn');
 const videoLibrary = $('videoLibrary');
 const libraryGrid = $('libraryGrid');
 
@@ -66,6 +67,22 @@ function showLibrary() {
 function hideLibrary() {
   videoLibrary.classList.add('hidden');
   transcriptContent.classList.remove('hidden');
+  backBtn.classList.remove('hidden');
+}
+
+function backToLibrary() {
+  showLibrary();
+  backBtn.classList.add('hidden');
+  videoUrlInput.value = '';
+  playerPlaceholder.classList.remove('hidden');
+  if (player) { player.destroy(); player = null; }
+  stopSync();
+  subtitles = [];
+  analysisData = {};
+  currentActiveIndex = -1;
+  analyzeBtn.disabled = true;
+  analyzeBtn.textContent = 'AI Analyze';
+  analyzeBtn.style.opacity = '1';
 }
 
 // ===== Settings =====
@@ -453,6 +470,7 @@ videoUrlInput.addEventListener('keydown', (e) => {
 });
 
 analyzeBtn.addEventListener('click', analyzeSubtitles);
+backBtn.addEventListener('click', backToLibrary);
 
 // Settings modal
 settingsBtn.addEventListener('click', () => {
