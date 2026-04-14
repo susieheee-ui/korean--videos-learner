@@ -1,0 +1,601 @@
+{
+  "videoId": "kWwB32IOeLA",
+  "title": "결혼 허락 쉽지 않다.. 5년만에 주휘리 부모님께 첫 인사",
+  "analysis": {
+    "0": { "chinese": "（没有）就是说，去了", "annotations": [] },
+    "1": { "chinese": "真的好讨厌，为什么我...", "annotations": [] },
+    "2": { "chinese": "大家好小熊们，我现在在化妆", "annotations": [
+      { "text": "곰돌리들", "type": "vocabulary", "explanation": "小熊们。곰（熊）+ 돌이（昵称后缀）+ 들（复数），YouTuber对粉丝的昵称" },
+      { "text": "화장을", "type": "vocabulary", "explanation": "化妆（名词）。화장 + 을（宾格助词）" }
+    ]},
+    "3": { "chinese": "快化完妆了，明天我要跟主爸的父母一起吃饭，这不是第一次见面，我跟（他的）妈妈爸爸好像见过两三次，跟妈妈还有过很搞笑地打招呼的经历", "annotations": [
+      { "text": "마무리한 상태인데", "type": "grammar", "explanation": "处于完成/收尾的状态。마무리하다（收尾）+ -ㄴ 상태（状态）+ -인데（铺垫转折）" },
+      { "text": "식사를 하기로", "type": "grammar", "explanation": "-기로 하다：决定做某事。식사를 하기로 했다 = 决定了要吃饭" },
+      { "text": "해가지고", "type": "idiom", "explanation": "= 해서（所以/然后）。-아/어 가지고 是口语中极常用的连接方式" },
+      { "text": "처음 뵙는 건 아니고", "type": "idiom", "explanation": "并不是第一次见。뵙다 = 보다的谦语（对长辈用），-는 건 아니고 = 并不是..." },
+      { "text": "어머님", "type": "vocabulary", "explanation": "对他人母亲的尊称。어머니 + 님（尊称后缀）" },
+      { "text": "뵙던 것 같은데", "type": "grammar", "explanation": "好像曾经见过。-던（回忆过去经验）+ 것 같다（好像）+ -ㄴ데（转折铺垫）" },
+      { "text": "웃기게 인사한 적도", "type": "grammar", "explanation": "-ㄴ 적(이) 있다：有过...的经历。웃기게 = 搞笑地" }
+    ]},
+    "4": { "chinese": "而且爸爸叫我和主爸打一次高尔夫", "annotations": [
+      { "text": "아버님이", "type": "vocabulary", "explanation": "爸爸（对他人父亲的尊称）。아버지 + 님" },
+      { "text": "골프 한번", "type": "vocabulary", "explanation": "高尔夫一次。골프 = golf（外来语）" }
+    ]},
+    "5": { "chinese": "说你们打一次试试吧，所以去过。我说实话高尔夫打得不好，就是去吃东西的。还有那时候好像剩了一块披萨？我不记得了，据说我当时问'这个我可以吃吗'。我记不得了", "annotations": [
+      { "text": "해 봐라", "type": "grammar", "explanation": "你试试看。해 보다（试试看）+ -아라（口语命令式）" },
+      { "text": "있거든요", "type": "grammar", "explanation": "-거든요：解释原因，'因为你知道...'。向对方补充说明背景信息" },
+      { "text": "솔직히", "type": "vocabulary", "explanation": "说实话、坦白说（副词）" },
+      { "text": "잘 못 치니까", "type": "idiom", "explanation": "打得不好。잘 못 + 动词 = 做得不好（注意不是못 잘）" },
+      { "text": "먹으러 갔단 말이에요", "type": "idiom", "explanation": "'我说的是去吃东西的'。-단 말이에요 = -다는 말이에요，口语中强调说明" },
+      { "text": "한 조각", "type": "vocabulary", "explanation": "一块/一片。조각 = 片、块（量词）" },
+      { "text": "기억이 안 나는데", "type": "idiom", "explanation": "想不起来。기억이 안 나다 比 기억하지 못하다 更口语化" },
+      { "text": "그랬었대요", "type": "grammar", "explanation": "据说那样做了。그러다 + -었었-（过去完成）+ -대요（传闻/听说）" }
+    ]},
+    "6": { "chinese": "我记不得了。但是因为这种场合是第一次，不知道该穿什么。哥哥也没衣服我也没衣服，要买衣服还要买礼物，所以今天要到处逛逛。在圣水那边", "annotations": [
+      { "text": "안 나거든요", "type": "grammar", "explanation": "-거든요 再次出现：解释原因。'因为记不起来嘛'" },
+      { "text": "뭘 입어야 될지 모르겠는", "type": "grammar", "explanation": "不知道该穿什么。뭘 = 무엇을的缩写，-아야 되다（应该）+ -ㄹ지 모르다（不知道是否）" },
+      { "text": "옷 사고 선물도 사고 해야 돼", "type": "grammar", "explanation": "-고 -고 해야 되다：又要...又要...。列举多个要做的事" },
+      { "text": "돌아다니고요", "type": "vocabulary", "explanation": "到处逛。돌아다니다 = 到处走/逛，非常实用的日常动词" }
+    ]},
+    "7": { "chinese": "听说Pottery有个不错的店新开了，所以先去Pottery店再去Amoment再去现代百货，这是今天的路线。今天就这样穿去行吗？下面是这种西裤，这样试穿了一下。今天天气挺不好的", "annotations": [
+      { "text": "괜찮은 데가 열렸다고", "type": "grammar", "explanation": "听说不错的地方开了。-다고 해가지고 = 听说...所以（间接引语+口语连接）" },
+      { "text": "갔다가", "type": "grammar", "explanation": "去了之后再...。表示先去一个地方然后转去另一个地方" },
+      { "text": "코스", "type": "vocabulary", "explanation": "路线、行程（外来语，course）" },
+      { "text": "입어 봤어요", "type": "grammar", "explanation": "试穿了。-아/어 보다 = 试试做某事" }
+    ]},
+    "8": { "chinese": "所以天气阴沉，去那边好好逛一逛。再休闲一点就穿皮衣这样出去", "annotations": [
+      { "text": "돌아다녀 보려고요", "type": "grammar", "explanation": "打算逛一逛。-아/어 보다（试试）+ -려고요（打算）" },
+      { "text": "캐주얼하게", "type": "vocabulary", "explanation": "休闲地（外来语casual + 하게副词化）" },
+      { "text": "레더", "type": "vocabulary", "explanation": "皮革/皮衣（外来语leather）" }
+    ]},
+    "9": { "chinese": "这样，还算不错吧？我也觉得皮衣应该穿得休闲一点，这个是我前不久新买的包，正好到了", "annotations": [
+      { "text": "나름", "type": "idiom", "explanation": "还算、照自己的方式来看。非常韩式的表达，意思是'按自己的标准来看还可以'" },
+      { "text": "괜찮은 거 같지 않나요?", "type": "grammar", "explanation": "-지 않나요? 反问句：'不是...吗？' 柔和地征求同意" },
+      { "text": "하긴 하는데", "type": "grammar", "explanation": "-기는 하다：虽然确实是这样...但是。承认事实但有转折" },
+      { "text": "마침 와 가지고", "type": "idiom", "explanation": "正好到了所以。마침 = 正好/恰好" }
+    ]},
+    "10": { "chinese": "拆开", "annotations": [
+      { "text": "뜯어서", "type": "vocabulary", "explanation": "拆开、撕开。뜯다 的连接形式" }
+    ]},
+    "11": { "chinese": "买了包。是在Amoment买的。到了到了！", "annotations": [
+      { "text": "샀습니다", "type": "grammar", "explanation": "买了（格式体敬语）。사다（买）+ -았습니다" }
+    ]},
+    "12": { "chinese": "我之前给小熊们做过一次白色包的活动。做完之后我自己也特别想要白色的包。不同的设计，背着肩膀很舒服的那种，就买了这个", "annotations": [
+      { "text": "이벤트를 한번 했었거든요", "type": "grammar", "explanation": "做过一次活动嘛。-었었-（过去完成）+ -거든요（解释原因）" },
+      { "text": "그러고 나니까", "type": "idiom", "explanation": "做完之后。그러고 나다（做完那件事）+ -니까（因为）" },
+      { "text": "갖고 싶은 거예요", "type": "grammar", "explanation": "就是想要。갖고 싶다（想拥有）+ -ㄴ 거예요（解释说明）" }
+    ]},
+    "13": { "chinese": "所以今天就拿这个包出门吧。这个丢了。化妆包。但是还没找到喜欢的，就这样拿着（旧的）出门", "annotations": [
+      { "text": "들고 나가도록 하겠습니다", "type": "grammar", "explanation": "就拿着出去吧。-도록 하다 = 打算做...。比较正式的表达" },
+      { "text": "잃어버렸거든요", "type": "grammar", "explanation": "丢了嘛。잃어버리다（丢失）+ -거든요（解释原因）" },
+      { "text": "마음에 드는게", "type": "idiom", "explanation": "满意的/喜欢的。마음에 들다 = 中意、满意" }
+    ]},
+    "14": { "chinese": "就这样出门啦", "annotations": [
+      { "text": "나가 보겠습니다", "type": "grammar", "explanation": "出去看看。-아/어 보다（试试）+ -겠습니다（意志/打算的敬语）" }
+    ]},
+    "15": { "chinese": "好紧张啊。拜拜。再看看。这样穿，这个就是这种mood", "annotations": [
+      { "text": "딸려요", "type": "vocabulary", "explanation": "紧张、发抖。떨리다的口语变形" },
+      { "text": "무드", "type": "vocabulary", "explanation": "mood，氛围/感觉（外来语）" }
+    ]},
+    "16": { "chinese": "2杆。就是说平均成绩是74的意思", "annotations": [
+      { "text": "핸디", "type": "vocabulary", "explanation": "handicap的缩写，高尔夫差点" },
+      { "text": "뭐냐면", "type": "idiom", "explanation": "就是说。用于解释说明前面提到的内容" }
+    ]},
+    "17": { "chinese": "什么都没买到。Amoment真的是", "annotations": [] },
+    "18": { "chinese": "太火了，选了都没有", "annotations": [
+      { "text": "인기가 너무 많아서", "type": "idiom", "explanation": "太受欢迎了。인기（人气）+ 많다（多）" },
+      { "text": "고르면 다 제품이", "type": "vocabulary", "explanation": "一选就都没货了。고르다 = 挑选" }
+    ]},
+    "19": { "chinese": "所以最终什么也没买成", "annotations": [
+      { "text": "결국은", "type": "vocabulary", "explanation": "最终、结果。副词" }
+    ]},
+    "20": { "chinese": "只有你安慰我啊", "annotations": [
+      { "text": "너밖에", "type": "grammar", "explanation": "只有你。밖에 + 否定 = 只有..." },
+      { "text": "위로해 주다", "type": "vocabulary", "explanation": "安慰。위로하다（安慰）+ -아/어 주다（为某人做）" }
+    ]},
+    "21": { "chinese": "啊不过其中有一个，好久没来汝矣岛了，真的好漂亮。像纽约一样。是吧？哥哥你也感觉到了吧", "annotations": [
+      { "text": "오랜만에", "type": "idiom", "explanation": "好久不...。오래간만에的口语缩写，= 好久没来了" },
+      { "text": "여의도", "type": "vocabulary", "explanation": "汝矣岛，首尔的金融/商业中心地区" }
+    ]},
+    "22": { "chinese": "不是，因为头发...为什么这样弄，我就是这样", "annotations": [] },
+    "23": { "chinese": "见我爸妈的时候就只长这个样子。快帮我选，这个还是那个。今天到哪儿都排队排疯了。就是因为是周末嘛。失败", "annotations": [
+      { "text": "어딜 가든", "type": "grammar", "explanation": "不管去哪里。어디를 가든 的缩写，-든 = 无论...都" },
+      { "text": "줄이 미쳤어", "type": "idiom", "explanation": "排队疯了。미치다 在口语中表示程度极高，'疯了一样地长'" }
+    ]},
+    "24": { "chinese": "最太植这个人不存在。《向日葵》里有吴太植，电影《大叔》里有车太植。是Mary把它们混在一起的。总是跟我说'最太植回来了'，但不是那样的", "annotations": [
+      { "text": "섞은 거야", "type": "vocabulary", "explanation": "混在一起的。섞다 = 混合、搅拌" },
+      { "text": "맨날", "type": "idiom", "explanation": "每天/总是。= 매일的口语形式，语气更随意" }
+    ]},
+    "25": { "chinese": "比如说，你呢。（讨论各种meme名字的用法）他们是对吧。但Mary是对谁用'最太植'的", "annotations": [] },
+    "26": { "chinese": "这样说'回来了'的话大家就笑了。但其实没理解", "annotations": [
+      { "text": "웃잖아", "type": "grammar", "explanation": "-잖아(요)：'不是...嘛'。用于提醒对方已知的事实" }
+    ]},
+    "27": { "chinese": "看起来好好吃。太棒了。什么，没有的话baby吃吧", "annotations": [
+      { "text": "맛있겠다", "type": "grammar", "explanation": "看起来好好吃。-겠- 在这里表示推测，'应该很好吃'" }
+    ]},
+    "28": { "chinese": "我也有的话就吃", "annotations": [] },
+    "29": { "chinese": "啊今天出去了", "annotations": [] },
+    "30": { "chinese": "抽烟的老公真的好讨厌", "annotations": [
+      { "text": "담배", "type": "vocabulary", "explanation": "香烟" },
+      { "text": "남편", "type": "vocabulary", "explanation": "丈夫、老公" }
+    ]},
+    "31": { "chinese": "之前看过很多了", "annotations": [] },
+    "32": { "chinese": "太费心了。去了普拉提之后有私人预约，所以总之就这样去普拉提吧", "annotations": [
+      { "text": "필라테스", "type": "vocabulary", "explanation": "普拉提（外来语Pilates）" },
+      { "text": "아무튼", "type": "vocabulary", "explanation": "总之、不管怎样。口语高频词" }
+    ]},
+    "33": { "chinese": "疯了", "annotations": [
+      { "text": "미친", "type": "idiom", "explanation": "疯了。미치다的过去式，口语中常用作感叹，表示惊讶/难以置信" }
+    ]},
+    "34": { "chinese": "G", "annotations": [] },
+    "35": { "chinese": "back", "annotations": [] },
+    "36": { "chinese": "出来看跳蚤市场场地了。凌晨1点，5月要办的跳蚤市场", "annotations": [
+      { "text": "플리마켓", "type": "vocabulary", "explanation": "跳蚤市场（外来语flea market）" },
+      { "text": "답사하다", "type": "vocabulary", "explanation": "实地考察、踩点" }
+    ]},
+    "37": { "chinese": "这里怎么样？哥哥。这边叫人鱼咖啡莲，最近很火的咖啡店", "annotations": [
+      { "text": "핫한", "type": "vocabulary", "explanation": "火的/热门的（外来语hot + 한形容词化）" }
+    ]},
+    "38": { "chinese": "不错", "annotations": [] },
+    "39": { "chinese": "因为只有baby的衣服和我的衣服嘛。5月的话这里天气暖和，可以开门", "annotations": [
+      { "text": "밖에 없을 거잖아", "type": "grammar", "explanation": "只有...嘛。밖에 + 없다（只有），-잖아（你知道的）" },
+      { "text": "따뜻해서", "type": "vocabulary", "explanation": "因为暖和。따뜻하다 = 温暖的" }
+    ]},
+    "40": { "chinese": "不管来不来都行，但这个也有", "annotations": [] },
+    "41": { "chinese": "还有可以稍微等一下的（空间）", "annotations": [] },
+    "42": { "chinese": "折叠区也不错", "annotations": [] },
+    "43": { "chinese": "挺好的，空间也很宽敞", "annotations": [
+      { "text": "나쁘지 않은 거 같아", "type": "idiom", "explanation": "好像不错。双重否定表示肯定，比直接说좋다更委婉自然" }
+    ]},
+    "44": { "chinese": "我也要在这里准备好再出门。里面穿了这样的连衣裙", "annotations": [
+      { "text": "원피스", "type": "vocabulary", "explanation": "连衣裙（外来语one-piece），韩国日常高频词" }
+    ]},
+    "45": { "chinese": "穿了这个，然后外套穿这件", "annotations": [
+      { "text": "아우터", "type": "vocabulary", "explanation": "外套（外来语outer）" }
+    ]},
+    "46": { "chinese": "这样扣上扣子穿也很好看呢。大概这种感觉", "annotations": [
+      { "text": "단추를 잠궈서", "type": "vocabulary", "explanation": "扣上扣子。단추 = 扣子，잠그다 = 锁上/扣上" },
+      { "text": "예쁘더라고요", "type": "grammar", "explanation": "（发现）很好看呢。-더라고요 表示回忆起自己亲身经历/发现的事实" }
+    ]},
+    "47": { "chinese": "结束之后晚上约在首尔站那边见面，在那里吃个饭然后去买礼物", "annotations": [
+      { "text": "만나기로 해가지고", "type": "grammar", "explanation": "约好了见面所以。-기로 하다（决定做）+ 해가지고（所以）" },
+      { "text": "사러 가려고 합니다", "type": "grammar", "explanation": "打算去买。-러 가다（为了...去）+ -려고 하다（打算）" }
+    ]},
+    "48": { "chinese": "希望空间不要太闷，首先采光要好，等候时不要不舒服。而且如果排队太长的话会打扰旁边的店。但是那里没有这个问题对吧，那块地很大所以特别好", "annotations": [
+      { "text": "답답하지 않았으면 했고", "type": "grammar", "explanation": "希望不要闷。-았/었으면 하다 = 希望...。非常实用的许愿/希望表达" },
+      { "text": "채광", "type": "vocabulary", "explanation": "采光" },
+      { "text": "불편하다", "type": "vocabulary", "explanation": "不方便、不舒服" },
+      { "text": "가지고", "type": "idiom", "explanation": "口语连接词，= -어서（因为/所以）" }
+    ]},
+    "49": { "chinese": "在露台那边搞，给小熊们准备一些", "annotations": [
+      { "text": "테라스", "type": "vocabulary", "explanation": "露台/阳台（外来语terrace）" }
+    ]},
+    "50": { "chinese": "可以做这种礼物送给（粉丝），所以反正定在山南洞了。我会带很多很多衣服去", "annotations": [
+      { "text": "픽스했습니다", "type": "vocabulary", "explanation": "确定了（外来语fix + 했습니다）。定下来了" },
+      { "text": "가져갈게요", "type": "grammar", "explanation": "我会带去的。가져가다（带走）+ -ㄹ게요（承诺/意志）" }
+    ]},
+    "51": { "chinese": "啊明天baby可能会头疼。因为雾霾预警发了。天哪", "annotations": [
+      { "text": "미세먼지", "type": "vocabulary", "explanation": "雾霾/PM2.5（细颗粒物）" },
+      { "text": "주의보", "type": "vocabulary", "explanation": "预警/注意报" },
+      { "text": "헐", "type": "idiom", "explanation": "天哪/我的天。韩语感叹词，表示惊讶" }
+    ]},
+    "52": { "chinese": "今天去的是新世界百货", "annotations": [] },
+    "53": { "chinese": "先看高尔夫用品。好的来看看。哦这个，妈妈一定会喜欢。我们妈妈会喜欢的对吧。你好", "annotations": [
+      { "text": "좋아하겠다", "type": "grammar", "explanation": "一定会喜欢。-겠- 表示推测" },
+      { "text": "안녕하세요", "type": "vocabulary", "explanation": "您好（正式问候语）" }
+    ]},
+    "54": { "chinese": "我自己也想要。妈妈是这个。我们妈妈应该会要这个。两个都太好看了吗？每个都这么好看，这个一个一个各给我一个。哥哥现在在干嘛？", "annotations": [
+      { "text": "갖고 싶은데", "type": "grammar", "explanation": "想要呢。갖다（拥有）+ -고 싶다（想要）+ -ㄴ데（感叹/铺垫）" },
+      { "text": "하나씩 주세요", "type": "idiom", "explanation": "各给我一个。하나씩 = 各一个，주세요 = 请给我" }
+    ]},
+    "55": { "chinese": "接下来这边是帽子。前面展示的模特款是新品。这个应该很适合您", "annotations": [
+      { "text": "진열돼 있는", "type": "vocabulary", "explanation": "展示着的。진열되다 = 被陈列/展示" },
+      { "text": "신상", "type": "vocabulary", "explanation": "新品/新款。신상품的缩写，口语高频" },
+      { "text": "어울리실 거 같아요", "type": "grammar", "explanation": "应该很适合您。어울리다（适合）+ -시-（尊敬）+ -ㄹ 거 같다（推测）" }
+    ]},
+    "56": { "chinese": "只是在家试一下这个有点受限。这个给我一个吧。啊比想象中挺简单就搞定了", "annotations": [
+      { "text": "생각보다", "type": "idiom", "explanation": "比想象中。非常实用的口语表达" }
+    ]},
+    "57": { "chinese": "哥哥，但是还有要买的。这是我的眼影，不是面包屑，是眼影。另一个疑问：baby到底有多少个鼠标？", "annotations": [
+      { "text": "섀도우", "type": "vocabulary", "explanation": "眼影（外来语shadow）" },
+      { "text": "도대체", "type": "vocabulary", "explanation": "到底、究竟。表示疑惑的副词" }
+    ]},
+    "58": { "chinese": "我的内衣箱子里又发现了一个。没有吃的了。带走吧baby。还有这个贴贴假睫毛，我真的快有心理阴影了。你在这里大叫试试，以为是蜘蛛呢", "annotations": [
+      { "text": "트라우마", "type": "vocabulary", "explanation": "心理创伤/阴影（外来语trauma）" },
+      { "text": "속눈썹", "type": "vocabulary", "explanation": "睫毛。속（里面）+ 눈썹（眉毛）→ 睫毛" }
+    ]},
+    "59": { "chinese": "对不起对不起，住得很好要走了。拿走吧", "annotations": [
+      { "text": "잘 머물다 갑니다", "type": "idiom", "explanation": "住得很好要走了。客气的告别用语" }
+    ]},
+    "60": { "chinese": "放哪里？放这里？这条裤子是我们最近经常穿的，是Noi的，非常好。baby戴Sori帽子运动了。据说这个真的很好", "annotations": [
+      { "text": "자주 입는", "type": "vocabulary", "explanation": "经常穿的。자주 = 经常" }
+    ]},
+    "61": { "chinese": "老师说这个帽子效果很好。哥哥你瘦了。卖了。被迫瘦的。嗯。闻起来好香", "annotations": [
+      { "text": "살 빠졌다", "type": "idiom", "explanation": "瘦了。살（肉）+ 빠지다（掉/脱落）= 减肥了/瘦了" }
+    ]},
+    "62": { "chinese": "感觉像是Subway遇到了吧？完全看起来像Subway。我点的是Toasting Black Bread，帕玛奶酪...不是，是Roast BBQ Chicken 15cm", "annotations": [] },
+    "63": { "chinese": "我一般不会被baby的段子逗笑，是被baby这个人逗笑的。好像三周前吧。大家好，今天准备去运动", "annotations": [
+      { "text": "개그에 터지다", "type": "idiom", "explanation": "被段子逗笑。터지다 = 爆发，这里指笑到爆" }
+    ]},
+    "64": { "chinese": "这个是可以去角质的化妆水，味道有点重。但是因为是去角质化妆水，有种去掉死皮的感觉", "annotations": [
+      { "text": "필링", "type": "vocabulary", "explanation": "去角质（外来语peeling）" },
+      { "text": "스킨", "type": "vocabulary", "explanation": "化妆水/爽肤水（韩国用skin指化妆水）" }
+    ]},
+    "65": { "chinese": "我特别喜欢这个。Anua胶囊精华和这个一起用的话", "annotations": [] },
+    "66": { "chinese": "我去的店里，化妆师推荐了这个人工泪液形态的产品。她特别推荐，这是正装。我就买了正装来用", "annotations": [
+      { "text": "추천하다", "type": "vocabulary", "explanation": "推荐" },
+      { "text": "본품", "type": "vocabulary", "explanation": "正装/正品。본（本/正）+ 품（品）" }
+    ]},
+    "67": { "chinese": "特别好用。这样只用精华叠涂三四层收尾的话，就像涂了面霜一样，里面的水分真的被牢牢锁住了。总之今天就这样去运动吧", "annotations": [
+      { "text": "레이어링", "type": "vocabulary", "explanation": "叠涂、分层（外来语layering）" },
+      { "text": "속수분", "type": "vocabulary", "explanation": "内在水分/底层水分。속 = 里面" },
+      { "text": "꽉 잡히다", "type": "idiom", "explanation": "被牢牢锁住。꽉 = 紧紧地，잡히다 = 被抓住" }
+    ]},
+    "68": { "chinese": "现在快化妆吧，太好用了。先用这个化妆棉把皮肤温度降下来", "annotations": [
+      { "text": "피부 온도를 낮추다", "type": "idiom", "explanation": "降低皮肤温度。美妆技巧用语" }
+    ]},
+    "69": { "chinese": "这样大概放5分钟左右", "annotations": [] },
+    "70": { "chinese": "这之后还要再做一步，我平时有一个随身携带的迷你喷雾。这是它的100ml版本，叫Anua PDR透明质酸水分胶囊喷雾，长得很特别。里面可以看到", "annotations": [
+      { "text": "들고 다니는", "type": "idiom", "explanation": "随身携带的。들다（拿）+ 고 다니다（走来走去）= 随身携带" }
+    ]},
+    "71": { "chinese": "有小颗粒在里面的那种喷雾", "annotations": [
+      { "text": "알갱이", "type": "vocabulary", "explanation": "颗粒、小粒" }
+    ]},
+    "72": { "chinese": "因为是水分胶囊喷雾，在第一步直接喷一下再化妆的话，妆真的很服帖。比其他喷雾皮肤的滋润感保持更久。所以我本来说实话", "annotations": [
+      { "text": "화장이 잘 먹다", "type": "idiom", "explanation": "妆很服帖/上妆服帖。먹다在这里是'吃进去/吸收'的意思" },
+      { "text": "촉촉하다", "type": "vocabulary", "explanation": "滋润的、水润的" }
+    ]},
+    "73": { "chinese": "说实话，每天做基础护肤再出门太麻烦了。所以只涂化妆水就出门的情况说实话很多。那种时候就带着喷雾出去，一整天喷的话完全不会感到干燥", "annotations": [
+      { "text": "귀찮다", "type": "vocabulary", "explanation": "麻烦的、嫌烦的。韩语日常超高频形容词" },
+      { "text": "건조함", "type": "vocabulary", "explanation": "干燥感。건조하다（干燥）+ -ㅁ（名词化）" }
+    ]},
+    "74": { "chinese": "这个喷雾真的特别好。喷射力看得到吗？这样均匀地喷在脸上", "annotations": [
+      { "text": "분사력", "type": "vocabulary", "explanation": "喷射力。분사（喷射）+ 력（力）" },
+      { "text": "골고루", "type": "vocabulary", "explanation": "均匀地。副词" }
+    ]},
+    "75": { "chinese": "所以先喷这个", "annotations": [] },
+    "76": { "chinese": "化妆时一定要做的第一步。我确实是喷很多的那种", "annotations": [
+      { "text": "무조건", "type": "vocabulary", "explanation": "一定/无条件。强调'必须做'" },
+      { "text": "편이다", "type": "grammar", "explanation": "属于...那一类/那种。-는 편이다 = 比较倾向于..." }
+    ]},
+    "77": { "chinese": "这样先做水分打底的话，底妆会更服帖，皮肤温度会降很多。据说是清潭洞很有名的化妆师监制的喷雾。我也很喜欢腮红", "annotations": [
+      { "text": "수분 커팅", "type": "vocabulary", "explanation": "水分打底/水分层。护肤术语" },
+      { "text": "블러셔", "type": "vocabulary", "explanation": "腮红（外来语blusher）" }
+    ]},
+    "78": { "chinese": "在腮红或睫毛膏上面喷喷雾的话，有时候会脱妆或晕妆，但这个几乎不会", "annotations": [
+      { "text": "무너지다", "type": "vocabulary", "explanation": "崩塌/脱妆。化妆品语境下指妆容崩坏" },
+      { "text": "벗겨지다", "type": "vocabulary", "explanation": "脱落/掉落" }
+    ]},
+    "79": { "chinese": "真的几乎不会脱妆。然后要涂精华了，我用完了。是Anua PDR透明质酸胶囊100精华，这个真的很有名。作为水分精华", "annotations": [] },
+    "80": { "chinese": "甚至不用额外涂面霜。只用这个然后直接涂防晒也够了，是非常滋润的系列", "annotations": [
+      { "text": "선크림", "type": "vocabulary", "explanation": "防晒霜（外来语sun cream）" },
+      { "text": "촉촉한 라인", "type": "vocabulary", "explanation": "滋润的系列/产品线" }
+    ]},
+    "81": { "chinese": "我最开始是怎么知道的呢，以前Anua还没像现在这么火的时候，刚开始火起来的时候知道的。去香奈儿活动的时候，那个化妆师带了这个", "annotations": [
+      { "text": "핫하기 전", "type": "vocabulary", "explanation": "火之前/出名之前" },
+      { "text": "뜨기 시작할 때", "type": "idiom", "explanation": "开始火起来的时候。뜨다 = 浮起来/火起来" }
+    ]},
+    "82": { "chinese": "她跟我推荐了。那时候到现在，现在都是Olive Young第一名了。但那时候刚开始口碑传播，像偷偷告诉我一样推荐的。但真的一年之间", "annotations": [
+      { "text": "입소문을 타다", "type": "idiom", "explanation": "口碑传播/靠口碑传开。입소문 = 口碑" },
+      { "text": "올리브영", "type": "vocabulary", "explanation": "Olive Young，韩国最大的药妆/美妆连锁店" }
+    ]},
+    "83": { "chinese": "现在哪个店都在用。精华叠涂三到四层之后再开始做底妆，这样的话底妆会非常干净", "annotations": [] },
+    "84": { "chinese": "所以那时候知道了Anua。冬天用比较厚重的，现在天气好了开始换成清爽的了", "annotations": [
+      { "text": "무겁고 리치한", "type": "vocabulary", "explanation": "厚重丰盈的。리치하다 = rich（外来语），质地浓稠" }
+    ]},
+    "85": { "chinese": "天气好的时候用真的特别好。小熊们也一定要试试。真的很Q弹。我用过很多化妆品，说实话其他系列不太清楚", "annotations": [
+      { "text": "쫀쫀이", "type": "idiom", "explanation": "Q弹的/有弹性的。拟态词，形容质地有弹力" },
+      { "text": "써 봐요", "type": "grammar", "explanation": "试试用吧。쓰다（用）+ -아/어 보다（试试）+ -아요（非格式体）" }
+    ]},
+    "86": { "chinese": "不太了解，但水分方面Anua真的是最好的。不是那种用久了觉得皮肤变好的化妆品，而是用了马上就能感受到效果", "annotations": [
+      { "text": "수분은 짱이에요", "type": "idiom", "explanation": "水分方面是最棒的。짱 = 最好的/第一（口语俚语）" },
+      { "text": "효과가 바로 느껴지다", "type": "idiom", "explanation": "效果立刻能感受到。바로 = 马上" }
+    ]},
+    "87": { "chinese": "吸收也很快，不用拍很多次就吸收了。真的是水状质地。没有涂任何面霜的状态，真的强烈推荐", "annotations": [
+      { "text": "흡수", "type": "vocabulary", "explanation": "吸收" },
+      { "text": "강추", "type": "idiom", "explanation": "强烈推荐。강력（强力）+ 추천（推荐）的缩写" },
+      { "text": "물제형", "type": "vocabulary", "explanation": "水状质地。물（水）+ 제형（剂型）" }
+    ]},
+    "88": { "chinese": "推荐大家试试这两个。现在是企划套装在售。精华买一送一。在Olive Young有卖", "annotations": [
+      { "text": "기획세트", "type": "vocabulary", "explanation": "企划套装/限定套装" },
+      { "text": "원플러스원", "type": "vocabulary", "explanation": "买一送一（外来语1+1），韩国促销常用说法" }
+    ]},
+    "89": { "chinese": "到初秋为止", "annotations": [] },
+    "90": { "chinese": "底妆我是混合三款涂的，上次没说是哪些就跳过了。是Haming清透细胞水BB乳液17号，About Tone Skin Layer P粉底液19号，还有Fair Silk 100号白粉红", "annotations": [
+      { "text": "섞어 바르다", "type": "idiom", "explanation": "混合涂。섞다（混合）+ 바르다（涂）" },
+      { "text": "베이스", "type": "vocabulary", "explanation": "底妆（外来语base）" }
+    ]},
+    "91": { "chinese": "这个完全就是白色。把这三个混在一起用粉扑。这个粉扑也真的很好用。蘸水拧干来用", "annotations": [
+      { "text": "퍼프", "type": "vocabulary", "explanation": "粉扑/美妆蛋（外来语puff）" }
+    ]},
+    "92": { "chinese": "就是说底妆涂上去就是这种感觉。用了Anua之后", "annotations": [] },
+    "93": { "chinese": "把眼部区域干净地处理掉。到眉毛。只做了底妆比刚才更像个人了。前不久漂过一次头发，又回来了", "annotations": [
+      { "text": "탈색", "type": "vocabulary", "explanation": "漂发/脱色" }
+    ]},
+    "94": { "chinese": "见了圭民哥。圭民哥和主吾哥还有亲近的朋友4个人一起", "annotations": [] },
+    "95": { "chinese": "吃了饭。但那个时间，三个小时全程在聊命理", "annotations": [
+      { "text": "사주", "type": "vocabulary", "explanation": "四柱/八字命理。韩国人也很热衷看命理" },
+      { "text": "시간 내내", "type": "idiom", "explanation": "整段时间/全程。내내 = 始终、一直" }
+    ]},
+    "96": { "chinese": "需要付费的。但付费后会充值追加功能。其实命理就是统计学嘛。我是相信命理的。但区别在于那个统计解读得多好", "annotations": [
+      { "text": "결제", "type": "vocabulary", "explanation": "结算/付款" },
+      { "text": "통계", "type": "vocabulary", "explanation": "统计" },
+      { "text": "믿는 편이에요", "type": "grammar", "explanation": "比较相信那一类。-는 편이다 = 倾向于..." },
+      { "text": "풀이를 하다", "type": "vocabulary", "explanation": "解读、解释" }
+    ]},
+    "97": { "chinese": "那个命理App真的很准", "annotations": [
+      { "text": "잘 맞다", "type": "idiom", "explanation": "很准。맞다 = 对/准确" }
+    ]},
+    "98": { "chinese": "我的结果是这样出来的。辞职当YouTuber吧。说我不适合普通上班族生活，会觉得闷。小时候的梦想是", "annotations": [
+      { "text": "때려치다", "type": "idiom", "explanation": "甩手不干/辞职。非常口语化且语气强烈的表达" },
+      { "text": "답답하게 느껴지다", "type": "grammar", "explanation": "会觉得闷。느껴지다 = 被感受到（被动形）" }
+    ]},
+    "99": { "chinese": "外交官呢。但那时候妈妈", "annotations": [
+      { "text": "외교관", "type": "vocabulary", "explanation": "外交官" }
+    ]},
+    "100": { "chinese": "每次去看完命理回来，总是跟我说完全是外交官的命", "annotations": [
+      { "text": "종종", "type": "vocabulary", "explanation": "时不时/偶尔" },
+      { "text": "사주라면서", "type": "grammar", "explanation": "说是...的命呢。-라면서 = 引用并确认，'说是...'" }
+    ]},
+    "101": { "chinese": "那时候也说是外交官的命。中学之前没有YouTuber这个职业嘛。（开始化眼妆）从黑色开始的部分9mm, 9mm, 10mm, 11mm", "annotations": [] },
+    "102": { "chinese": "在眼尾贴最长的，下睫毛也贴了。越来越像个人了。睫毛膏是CLIO Kill Lash Super Proof Mascara 1号。这样化妆就", "annotations": [
+      { "text": "점점 사람이 돼 가다", "type": "idiom", "explanation": "越来越像个人了。韩国女生化妆时的趣味说法" }
+    ]},
+    "103": { "chinese": "完了，最后喷一下这个喷雾就好", "annotations": [] },
+    "104": { "chinese": "是Chera这个品牌前不久买的。但这个会不会有点像小混混？是这种感觉的", "annotations": [
+      { "text": "양아치", "type": "vocabulary", "explanation": "小混混/流氓。口语中也用于形容穿着风格比较痞/酷" }
+    ]},
+    "105": { "chinese": "夹克。但确实有点（像小混混）吧", "annotations": [] },
+    "106": { "chinese": "哥哥我现在是不是像小混混？穿这件...下面这条裙子很好看。这种感觉。这里要不要配这个？不，配这个也会好看的。因为比较端正，黑配黑", "annotations": [
+      { "text": "단정하다", "type": "vocabulary", "explanation": "端正的、整洁的" }
+    ]},
+    "107": { "chinese": "因为是黑配黑", "annotations": [] },
+    "108": { "chinese": "可以吧？（他）很时尚所以这种衣服什么的真的不在意。就算穿破洞牛仔裤去可能也不在意。你干嘛这么在意？没关系。好看呀", "annotations": [
+      { "text": "트렌디하다", "type": "vocabulary", "explanation": "时尚的（外来语trendy）" },
+      { "text": "신경 안 쓰다", "type": "idiom", "explanation": "不在意/不操心。신경（神经）+ 쓰다（用）" },
+      { "text": "찢어진 청바지", "type": "vocabulary", "explanation": "破洞牛仔裤。찢어지다（被撕裂）+ 청바지（牛仔裤）" }
+    ]},
+    "109": { "chinese": "这就是我。这就是我。其实我们是情侣装。我穿了这个。我们好可爱啊", "annotations": [
+      { "text": "커플", "type": "vocabulary", "explanation": "情侣/couple" }
+    ]},
+    "110": { "chinese": "听说长辈们喜欢鲜艳的颜色，这样搭配不错吧？就这样全部准备好了", "annotations": [
+      { "text": "어르신들", "type": "vocabulary", "explanation": "长辈们/老人们。어른（大人）+ 신（尊称）+ 들（复数）" },
+      { "text": "알록달록한", "type": "vocabulary", "explanation": "五颜六色的、色彩鲜艳的。拟态词" },
+      { "text": "쨍한", "type": "vocabulary", "explanation": "鲜艳的、亮眼的。口语形容词" }
+    ]},
+    "111": { "chinese": "首尔完全看不见了。哇今天", "annotations": [] },
+    "112": { "chinese": "太严重了。这不是废气吗？从首尔到盘桥/到盆唐，5点15分到的。45分钟前。刚才点什么好呢？", "annotations": [
+      { "text": "매연", "type": "vocabulary", "explanation": "废气/尾气" },
+      { "text": "심하다", "type": "vocabulary", "explanation": "严重的" }
+    ]},
+    "113": { "chinese": "总得有人做决定嘛。现在出来的话怎么办，单点多个菜？要喝酒吗？不，我喝的话就喝。我来开车就行。我喝吧？你不是不太能喝嘛。啊那也可以喝一点", "annotations": [
+      { "text": "결정을 누군가 해야지", "type": "idiom", "explanation": "总得有人做决定。-야지 = 应该..." },
+      { "text": "잘 못 마시다", "type": "idiom", "explanation": "不太能喝。잘 못 + 动词 = 做得不好" }
+    ]},
+    "114": { "chinese": "你喜欢什么？香槟？喜欢香槟。啊那家里那个就好了。爸爸买了好的放着呢。真的吗？以后也可以去玩", "annotations": [
+      { "text": "샴페인", "type": "vocabulary", "explanation": "香槟（外来语champagne）" }
+    ]},
+    "115": { "chinese": "那个真的好喝。真的吗？（爸爸）特别喜欢葡萄酒。所以明年要喝的酒今年就提前去酒庄下单了", "annotations": [
+      { "text": "와이너리", "type": "vocabulary", "explanation": "酒庄（外来语winery）" },
+      { "text": "미리", "type": "vocabulary", "explanation": "提前、事先" }
+    ]},
+    "116": { "chinese": "完全不一样", "annotations": [] },
+    "117": { "chinese": "在国外也是", "annotations": [] },
+    "118": { "chinese": "两个。还有牛五花两个", "annotations": [] },
+    "119": { "chinese": "大叔呀大叔。所以有时候也有那种评论。妈妈~（笑）是打造出来的形象", "annotations": [
+      { "text": "댓글", "type": "vocabulary", "explanation": "评论/留言（网络用语）" },
+      { "text": "만들어진 이미지", "type": "vocabulary", "explanation": "打造出来的形象" }
+    ]},
+    "120": { "chinese": "都是塑造出来的。从小就会说话，所以周围人都说要小心这孩子。妈妈总说的一句话就是'看起来像没读过书的样子'", "annotations": [] },
+    "121": { "chinese": "关于精品食品...啊这个，礼物礼物", "annotations": [] },
+    "122": { "chinese": "啊买了礼物。我们这个是", "annotations": [] },
+    "123": { "chinese": "这个给爸爸还是给妈妈？这个给妈妈。是打高尔夫时带的包。妈妈以后应该会经常出去了，天气暖和了。这个是爸爸的眼镜", "annotations": [
+      { "text": "드릴까요", "type": "grammar", "explanation": "要给（长辈）吗？드리다 = 주다的谦语（对长辈'给'）" },
+      { "text": "날씨 풀려가지고", "type": "idiom", "explanation": "天气转暖了所以。풀리다 = 解开/转暖" }
+    ]},
+    "124": { "chinese": "对。不是，爸爸是Marzhen的眼镜", "annotations": [] },
+    "125": { "chinese": "因为那个眼镜...但是爸爸有这个吗？最近买了Compt Two。这不是太阳镜吗？不是吗？", "annotations": [] },
+    "126": { "chinese": "啊完全不一样。应该会很适合他。镜框真的太好看了。哦太适合了", "annotations": [
+      { "text": "잘 어울리다", "type": "idiom", "explanation": "很适合/很搭。어울리다 = 搭配/适合" }
+    ]},
+    "127": { "chinese": "也给妈妈买了。是情侣款。颜色不同", "annotations": [] },
+    "128": { "chinese": "高尔夫水平有点过分了呢。是爱好啦。啊是在diss啊，谢谢", "annotations": [
+      { "text": "디스하다", "type": "vocabulary", "explanation": "吐槽/贬低（外来语diss）" }
+    ]},
+    "129": { "chinese": "以后会经常出去了", "annotations": [] },
+    "130": { "chinese": "见面时带着这个，啊好的好的，一起出去吧", "annotations": [] },
+    "131": { "chinese": "因为是第一次见面所以好像很紧张", "annotations": [
+      { "text": "긴장을 하다", "type": "vocabulary", "explanation": "紧张。긴장 = 紧张（名词）" }
+    ]},
+    "132": { "chinese": "哥哥恭喜你", "annotations": [
+      { "text": "축하드립니다", "type": "grammar", "explanation": "恭喜（敬语）。축하하다 + 드리다（谦语'给'）= 向您表示祝贺" }
+    ]},
+    "133": { "chinese": "啊到了", "annotations": [] },
+    "134": { "chinese": "看起来好好吃。我们故意简单吃了点。所以今天晚上多吃点", "annotations": [
+      { "text": "일부러", "type": "vocabulary", "explanation": "故意、特意" },
+      { "text": "간단하게", "type": "vocabulary", "explanation": "简单地" }
+    ]},
+    "135": { "chinese": "这个。哇就这样上来了呢", "annotations": [] },
+    "136": { "chinese": "要给她买很多好吃的。买好吃的也买好看的（笑）。我的梦想就是有个女儿。我们人生中没有女儿啊。我就是女儿嘛", "annotations": [
+      { "text": "사 주다", "type": "grammar", "explanation": "买给（某人）。사다（买）+ -아/어 주다（为某人做）" },
+      { "text": "딸", "type": "vocabulary", "explanation": "女儿" }
+    ]},
+    "137": { "chinese": "来之前民英担心了很多。是的", "annotations": [
+      { "text": "걱정 많이 했거든", "type": "grammar", "explanation": "担心了很多嘛。걱정하다（担心）+ -거든（解释原因）" }
+    ]},
+    "138": { "chinese": "去了聊什么呢？我一点都不担心。来了之后才知道为什么担心了。有点尴尬。我来了很久都没事。为什么没事？本来就是实战派", "annotations": [
+      { "text": "어색하다", "type": "vocabulary", "explanation": "尴尬的、不自在的" },
+      { "text": "실전파", "type": "vocabulary", "explanation": "实战派/行动派。실전（实战）+ 파（派）" }
+    ]},
+    "139": { "chinese": "在家里我原来的样子，就那样做就行了", "annotations": [
+      { "text": "그대로", "type": "vocabulary", "explanation": "原样/照样。那个样子不变" }
+    ]},
+    "140": { "chinese": "这样搞一次然后被训一次。跟爸爸打高尔夫那天在家吃披萨的时候，剩最后一块，爸爸在说话，她就一直盯着（披萨看）", "annotations": [] },
+    "141": { "chinese": "所以爸爸说请随意吃。那次跟妈妈在公寓的时候...", "annotations": [
+      { "text": "편하게 드세요", "type": "idiom", "explanation": "请随意吃/请自便。편하다（舒适）+ -게（副词化）+ 드시다（吃的敬语）" }
+    ]},
+    "142": { "chinese": "太有意思了，完全就是小仁的风格", "annotations": [] },
+    "143": { "chinese": "对吧（笑）。我说了嘛要准备的东西很多。也要安排大家一起见面的场合。妈妈跟民英完全一样", "annotations": [
+      { "text": "똑같다", "type": "vocabulary", "explanation": "完全一样。非常口语化的'一模一样'" }
+    ]},
+    "144": { "chinese": "得出去才能放松心情。妈妈完全是个宠溺民英的人", "annotations": [] },
+    "145": { "chinese": "哥哥比较像朋友一样的关系吧。运动神经好，打得很好", "annotations": [
+      { "text": "친구 같은 사이", "type": "idiom", "explanation": "像朋友一样的关系。사이 = 关系" }
+    ]},
+    "146": { "chinese": "说力气不够有什么用，但是民英一打的话，只要拿一次球杆就能打中", "annotations": [] },
+    "147": { "chinese": "又聪明又漂亮", "annotations": [
+      { "text": "똑똑하다", "type": "vocabulary", "explanation": "聪明" },
+      { "text": "이쁘다", "type": "vocabulary", "explanation": "漂亮。예쁘다的口语变形" }
+    ]},
+    "148": { "chinese": "我妈妈真的很喜欢（她）", "annotations": [] },
+    "149": { "chinese": "很喜欢", "annotations": [] },
+    "150": { "chinese": "她不在的时候爸爸说，只要聊到你们我就忍不住笑。太感谢了。妈妈的感情真的能感受到。我看到小仁就想到妈妈", "annotations": [
+      { "text": "얼굴에 미소가", "type": "idiom", "explanation": "脸上浮现笑容。미소 = 微笑" },
+      { "text": "감사하다", "type": "vocabulary", "explanation": "感谢" }
+    ]},
+    "151": { "chinese": "一起吃饭一起点蜡烛（庆祝），吃得很合拍", "annotations": [
+      { "text": "잘 맞다", "type": "idiom", "explanation": "很合拍/很合得来" }
+    ]},
+    "152": { "chinese": "吃了。合得来嘛。我今天就要戴这个出门了。好好看。好适合", "annotations": [
+      { "text": "잘 어울려요", "type": "idiom", "explanation": "很适合/很搭" }
+    ]},
+    "153": { "chinese": "如果我们以后有孩子的话，像主吾那样长就好了。我觉得民英的皮肤和视力就像...民英视力不好", "annotations": [] },
+    "154": { "chinese": "但是民英你吃东西的样子特别好看。妈妈也说过。妈妈朋友中间...那个也是初期的朋友吧？那个人也说一样的话", "annotations": [] },
+    "155": { "chinese": "特别是吃东西的样子太好看了", "annotations": [
+      { "text": "특히", "type": "vocabulary", "explanation": "特别是、尤其" }
+    ]},
+    "156": { "chinese": "说要一起学做饭。因为我们得自己做饭吃嘛", "annotations": [
+      { "text": "밥을 해먹다", "type": "idiom", "explanation": "做饭吃。해먹다 = 做了吃，非常口语化" }
+    ]},
+    "157": { "chinese": "不一定是明天但得做。身体太不好了", "annotations": [] },
+    "158": { "chinese": "得吃才行。我也手脚冰凉", "annotations": [
+      { "text": "손발이 차다", "type": "idiom", "explanation": "手脚冰凉。차다 = 凉的/冷的" }
+    ]},
+    "159": { "chinese": "妈妈有点像电视购物方向走了。但真的我听得入迷了。好像明天就得开始了。那我发给你？来了之后跟爸爸喝得很开心", "annotations": [
+      { "text": "홈쇼핑", "type": "vocabulary", "explanation": "电视购物（外来语home shopping）" },
+      { "text": "홀린 듯이", "type": "idiom", "explanation": "着了迷似的。홀리다（着迷）+ 듯이（好像）" }
+    ]},
+    "160": { "chinese": "想想看吧。怎么样？我明早要吃饭所以得赶紧睡了，问为什么的话，因为得早起吃早饭", "annotations": [] },
+    "161": { "chinese": "得一直保持健康。关于主吾，问我是不是真的人特别多。从手表开始说起", "annotations": [
+      { "text": "건강 관리", "type": "vocabulary", "explanation": "健康管理" }
+    ]},
+    "162": { "chinese": "觉得是假的人很多吗？但我觉得如果是假的怎么可能有那种表情。对。现在的表情太搞笑了", "annotations": [
+      { "text": "가짜", "type": "vocabulary", "explanation": "假的/假货" },
+      { "text": "신기하다", "type": "vocabulary", "explanation": "神奇的/不可思议的" }
+    ]},
+    "163": { "chinese": "不止那些，有好几个。说到觉得民英很积极那件事，首先我们起晚了。本来该早起的", "annotations": [
+      { "text": "긍정적이다", "type": "vocabulary", "explanation": "积极的/正面的" }
+    ]},
+    "164": { "chinese": "然后说'啊只剩10分钟准备了'，从床上跳起来冲到客厅", "annotations": [
+      { "text": "빡 일어나다", "type": "idiom", "explanation": "猛地起来。빡 = 用力/突然的拟声词" }
+    ]},
+    "165": { "chinese": "跟着节奏跳着舞向我走来。至今还一直在说", "annotations": [] },
+    "166": { "chinese": "啊没拍到。我觉得主吾哥也真的很搞笑。长得帅又会说话什么都好，但是因为太搞笑了所以在一起从来没觉得无聊过", "annotations": [
+      { "text": "잘생기다", "type": "vocabulary", "explanation": "长得帅" },
+      { "text": "지루하다", "type": "vocabulary", "explanation": "无聊的" },
+      { "text": "재밌다고 느끼니까", "type": "grammar", "explanation": "因为觉得有趣。재밌다 = 재미있다的缩写" }
+    ]},
+    "167": { "chinese": "在一起的时候很安心。那之后妈妈开始喜欢了。衣服风格变了很多", "annotations": [
+      { "text": "안심하다", "type": "vocabulary", "explanation": "安心、放心" }
+    ]},
+    "168": { "chinese": "说这种那种...时尚（笑）。爸爸总是给时尚排名。知道十多年了，爸爸每次都拿着便签纸排1234", "annotations": [
+      { "text": "패션 순위", "type": "vocabulary", "explanation": "时尚排名。패션（fashion）+ 순위（排名）" }
+    ]},
+    "169": { "chinese": "4名呢。总是妈妈说那样", "annotations": [] },
+    "170": { "chinese": "但问题是民英每次来4名的时候都问妈妈", "annotations": [] },
+    "171": { "chinese": "问没事吧。但是哥哥和我和爸爸三个人都把妈妈排第四", "annotations": [] },
+    "172": { "chinese": "主吾小学二年级的时候社会考试考得太差了，考了一个不可能的分数回来了。他自己也觉得不好意思，闭着眼睛跟我说'妈妈从今天开始不看漫画了，也会减少时间'", "annotations": [
+      { "text": "시험을 못 보다", "type": "idiom", "explanation": "考试考得差。시험 = 考试，못 보다 = 考得不好" }
+    ]},
+    "173": { "chinese": "一边揉搓着书包一边掏出社会试卷。但我觉得是这样的，我先出击。他真的很会说话嘛。想买好吃的也想买好看的", "annotations": [
+      { "text": "선수치다", "type": "idiom", "explanation": "先发制人/抢先出击。선수（先手）+ 치다（打）" },
+      { "text": "말을 잘하다", "type": "idiom", "explanation": "很会说话/口才好" }
+    ]},
+    "174": { "chinese": "真的太感谢了。我们发过视频的。如果以后要小孩的话，是女儿相吗", "annotations": [
+      { "text": "딸 상", "type": "vocabulary", "explanation": "女儿相/有女儿缘的面相" }
+    ]},
+    "175": { "chinese": "对吧。反而比民英我更...首先结婚后民英还年轻我也还年轻，各自都有想做的事", "annotations": [
+      { "text": "각자", "type": "vocabulary", "explanation": "各自" }
+    ]},
+    "176": { "chinese": "先各做各的怎么样。但是民英一边同意一边又摇摆不定。比如前几天出门的时候说'啊哥哥我好讨厌你'，但昨天又", "annotations": [
+      { "text": "왔다 갔다 하다", "type": "idiom", "explanation": "摇摆不定/来回变。왔다 갔다 = 来来回回" }
+    ]},
+    "177": { "chinese": "我们太相爱了。跟民英说加速吧。好的知道了。允许你当我孩子的爸爸了。（笑）", "annotations": [] },
+    "178": { "chinese": "（笑）对对，是加湿器。加湿器来了", "annotations": [
+      { "text": "가습기", "type": "vocabulary", "explanation": "加湿器" }
+    ]},
+    "179": { "chinese": "给你当爸爸的资格（笑）。我从来没说自己会做得好", "annotations": [] },
+    "180": { "chinese": "跟妈妈，我俩看剧的品味完全一样。对。妈妈你看了吗，我出演过的那个。记得吗？聊到双方都认识的人的话会拉近距离", "annotations": [
+      { "text": "드라마 취향", "type": "vocabulary", "explanation": "看剧品味/电视剧喜好。취향 = 喜好/品味" },
+      { "text": "가깝게 느껴지다", "type": "grammar", "explanation": "会感到亲近。가깝다（近）+ 느껴지다（被感受到）" }
+    ]},
+    "181": { "chinese": "妈妈去洗手间吧？趁那个间隙你在剧里已经出场了。得看才行。啊爸爸您看了吗？", "annotations": [] },
+    "182": { "chinese": "一直坐着呢（笑）。啊，什么都适合。太可爱了", "annotations": [] },
+    "183": { "chinese": "啊我追上去。一起走吧。主吾也是那样的，不喜欢别人给他买东西", "annotations": [] },
+    "184": { "chinese": "（笑）不是的，真的。主吾跟大家说了...爸爸光是供我读书就已经觉得很感恩了", "annotations": [] },
+    "185": { "chinese": "香槟真的是最后了", "annotations": [] },
+    "186": { "chinese": "之前爆的那个...妈妈最近投资这些（笑）", "annotations": [] },
+    "187": { "chinese": "现在家里收到的快递全是书。你们太忙了没时间看，所以我帮你们筛选出精华（笑）。太好了", "annotations": [
+      { "text": "추려서 액기스만", "type": "idiom", "explanation": "筛选出精华。추리다（筛选）+ 액기스（精华/extract）" }
+    ]},
+    "188": { "chinese": "爸爸您说什么呢", "annotations": [] },
+    "189": { "chinese": "存折里的钱为什么放着不动？干嘛拿美元就放着？为什么不多投资房产？投资风格有点激进。妈妈全都很激进（笑）", "annotations": [
+      { "text": "통장", "type": "vocabulary", "explanation": "存折/银行账户" },
+      { "text": "투자", "type": "vocabulary", "explanation": "投资" },
+      { "text": "공격적인 성향", "type": "vocabulary", "explanation": "激进的倾向/攻击性投资风格" }
+    ]},
+    "190": { "chinese": "你怎么知道的？但是你们得到了很大的财富。从现在开始（笑）", "annotations": [
+      { "text": "재산", "type": "vocabulary", "explanation": "财产/财富" }
+    ]},
+    "191": { "chinese": "不知道那有多大的财富", "annotations": [] },
+    "192": { "chinese": "目标全部定好结束后。爸爸说的有一定道理，不要追着钱跑。钱是有生命的。忽视钱或者轻视钱的话，钱100%知道", "annotations": [
+      { "text": "돈에는 생명이 있다", "type": "idiom", "explanation": "钱是有生命的。爸爸的投资哲学名言" }
+    ]},
+    "193": { "chinese": "那样的话钱会自己来。就是说理财语言变丰富了（笑）。太会说了。太有意思了。每句话都有比喻", "annotations": [
+      { "text": "재정 언어", "type": "vocabulary", "explanation": "理财语言/金融用语" },
+      { "text": "비유", "type": "vocabulary", "explanation": "比喻/类比" }
+    ]},
+    "194": { "chinese": "那个也是周末爆的嘛。周一我联系了妈妈。应该很严重吧", "annotations": [] },
+    "195": { "chinese": "是预料中的事", "annotations": [] },
+    "196": { "chinese": "所以没关系。啊", "annotations": [
+      { "text": "예상했던 일", "type": "vocabulary", "explanation": "预料中的事。예상하다 = 预想" }
+    ]},
+    "197": { "chinese": "没有亏损吗？不是啤酒。没有。今天早上全部回本了（笑）", "annotations": [
+      { "text": "손실", "type": "vocabulary", "explanation": "损失/亏损" },
+      { "text": "복구되다", "type": "vocabulary", "explanation": "恢复/回本。복구 = 恢复" }
+    ]},
+    "198": { "chinese": "啊今天也跌了一点。不，今天涨了。昨天跌了。刚才说要迟到了。但妈妈也有点", "annotations": [] },
+    "199": { "chinese": "有跟民英类似的情况，民英沉迷医学剧的时候，身体不舒服就往那方面想。但妈妈原来每晚都看金昌浩教授的演讲", "annotations": [] },
+    "200": { "chinese": "变得很感性。'主啊你不能那样，要多关心身边的人'。最近沉迷投资嘛。然后就说'你知道钱为什么叫钱吗？钱也是有生命的'", "annotations": [
+      { "text": "감성적이다", "type": "vocabulary", "explanation": "感性的" }
+    ]},
+    "201": { "chinese": "所以现在不看金教授了。不看了（笑）。没时间。唯一能说这些话的对象就是你们了。因为这是很大的优点。不管说什么都", "annotations": [] },
+    "202": { "chinese": "接受。全都接受、倾听，然后也说自己的意见。像女儿一样的。真的最", "annotations": [
+      { "text": "받아 주다", "type": "idiom", "explanation": "接纳/包容。받다（接受）+ -아 주다（为某人做）" }
+    ]},
+    "203": { "chinese": "带着嫉妒说的，什么时候来了就会做什么（笑）", "annotations": [
+      { "text": "질투", "type": "vocabulary", "explanation": "嫉妒/吃醋" }
+    ]},
+    "204": { "chinese": "操心很多呢真的。不能冲动，绝对不行。只是说意见。对，风险很大得想清楚。但最近ETF的波动...（笑）总结一下吧。好的好的。下次我去听", "annotations": [
+      { "text": "리스크", "type": "vocabulary", "explanation": "风险（外来语risk）" },
+      { "text": "변동", "type": "vocabulary", "explanation": "波动/变动" }
+    ]},
+    "205": { "chinese": "总结了吧。好的", "annotations": [] },
+    "206": { "chinese": "太开心了。啊我得用我的...（音乐）哥哥你今天感觉怎么样？很好。嗯。我太感激了。像刚才说的，他们太开心了", "annotations": [
+      { "text": "고마웠어", "type": "vocabulary", "explanation": "很感激。고맙다 = 感谢（比较亲近的感谢）" }
+    ]},
+    "207": { "chinese": "我很少见他们那么开心。为什么，因为没想到会公开吧？他们不是一直滔滔不绝说话的人。看来是真的很开心。我也很高兴。谢谢", "annotations": [
+      { "text": "반만해 보다", "type": "idiom", "explanation": "很少见/只见过一半程度" },
+      { "text": "즐겁다", "type": "vocabulary", "explanation": "快乐的、开心的" }
+    ]},
+    "208": { "chinese": "是一次非常好的聚会。我太开心了还想再来", "annotations": [] },
+    "209": { "chinese": "真的很擅长那种（待人接物的）事情", "annotations": [] },
+    "210": { "chinese": "我一辈子都学不会的那种", "annotations": [
+      { "text": "평생", "type": "vocabulary", "explanation": "一辈子/终生" }
+    ]},
+    "211": { "chinese": "走吧。我真的不行。啊是哥哥嘛。哎呀一起去吧。但是这个没什么味道嘛", "annotations": [] },
+    "212": { "chinese": "但是我们真的顺利结束了", "annotations": [
+      { "text": "잘 끝냈다", "type": "idiom", "explanation": "顺利结束了。잘 끝내다 = 圆满完成" }
+    ]}
+  }
+}

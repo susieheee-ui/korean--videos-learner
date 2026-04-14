@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean YouTube Learner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">Korean YouTube Learner</h1>
+    <div class="header-actions">
+      <button id="settingsBtn" class="btn btn-icon" title="Settings">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- URL Input Bar -->
+  <div class="url-bar">
+    <input type="text" id="videoUrl" placeholder="Paste YouTube URL here, e.g. https://www.youtube.com/watch?v=..." />
+    <button id="loadBtn" class="btn btn-primary">Load Video</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Left: Video Player -->
+    <div class="video-panel">
+      <div id="playerContainer" class="player-container">
+        <div id="player"></div>
+        <div id="playerPlaceholder" class="player-placeholder">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5">
+            <polygon points="5,3 19,12 5,21"/>
+          </svg>
+          <p>Paste a YouTube URL above to start learning</p>
+        </div>
+      </div>
+      <!-- Controls under video -->
+      <div class="video-controls">
+        <button id="analyzeBtn" class="btn btn-accent" disabled>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 20V10M6 20V4M18 20v-6"/>
+          </svg>
+          AI Analyze
+        </button>
+        <div class="legend">
+          <span class="legend-item"><span class="dot dot-vocab"></span>Vocabulary</span>
+          <span class="legend-item"><span class="dot dot-grammar"></span>Grammar</span>
+          <span class="legend-item"><span class="dot dot-idiom"></span>Idiom</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Transcript Panel -->
+    <div class="transcript-panel">
+      <div id="transcriptContent" class="transcript-content">
+        <div class="transcript-placeholder">
+          <p>Transcript will appear here after loading a video</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <h2>Settings</h2>
+      <div class="form-group">
+        <label for="apiProvider">AI Provider</label>
+        <select id="apiProvider">
+          <option value="claude">Claude (Anthropic)</option>
+          <option value="openai">OpenAI (GPT-4o)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="apiKey">API Key</label>
+        <input type="password" id="apiKey" placeholder="Enter your API key..." />
+        <small>Your key is stored locally and sent directly to the AI provider.</small>
+      </div>
+      <div class="modal-actions">
+        <button id="saveSettings" class="btn btn-primary">Save</button>
+        <button id="cancelSettings" class="btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Annotation Tooltip -->
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <p id="loadingText">Loading...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

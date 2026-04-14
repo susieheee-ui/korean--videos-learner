@@ -1,0 +1,15 @@
+{
+  "name": "korean-youtube-learner",
+  "version": "1.0.0",
+  "description": "Korean YouTube video learning tool with bilingual transcripts and annotations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "openai": "^4.77.0"
+  }
+}
