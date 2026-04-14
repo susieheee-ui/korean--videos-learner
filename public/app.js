@@ -159,11 +159,13 @@ function startSync() {
   syncInterval = setInterval(() => {
     if (!player || !player.getCurrentTime) return;
     const time = player.getCurrentTime();
+    // Find the last subtitle whose start time <= current time
+    // (handles gaps between subtitles correctly)
     let activeIdx = -1;
     for (let i = 0; i < subtitles.length; i++) {
-      const s = subtitles[i];
-      if (time >= s.start && time < s.start + s.dur) {
+      if (subtitles[i].start <= time) {
         activeIdx = i;
+      } else {
         break;
       }
     }
@@ -171,7 +173,7 @@ function startSync() {
       updateActiveLine(activeIdx);
       currentActiveIndex = activeIdx;
     }
-  }, 300);
+  }, 250);
 }
 
 function stopSync() {
@@ -189,8 +191,15 @@ function updateActiveLine(idx) {
     const line = transcriptContent.querySelector(`[data-index="${idx}"]`);
     if (line) {
       line.classList.add('active');
-      // Auto-scroll to active line
-      line.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Manually scroll the transcript container only (not the whole page)
+      const containerHeight = transcriptContent.clientHeight;
+      const lineTop = line.offsetTop;
+      const lineHeight = line.offsetHeight;
+      const targetScroll = lineTop - (containerHeight / 2) + (lineHeight / 2);
+      transcriptContent.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
     }
   }
 }
