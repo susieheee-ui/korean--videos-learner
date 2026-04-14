@@ -41,12 +41,20 @@
       </div>
       <!-- Controls under video -->
       <div class="video-controls">
-        <button id="analyzeBtn" class="btn btn-accent" disabled>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 20V10M6 20V4M18 20v-6"/>
-          </svg>
-          AI Analyze
-        </button>
+        <div class="control-buttons">
+          <button id="analyzeBtn" class="btn btn-accent" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 20V10M6 20V4M18 20v-6"/>
+            </svg>
+            AI Analyze
+          </button>
+          <button id="viewTermsBtn" class="btn hidden">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-2M4 19.5V4.5A2.5 2.5 0 0 1 6.5 2H20v15"/>
+            </svg>
+            单词语法本
+          </button>
+        </div>
         <div class="legend">
           <span class="legend-item"><span class="dot dot-vocab"></span>Vocabulary</span>
           <span class="legend-item"><span class="dot dot-grammar"></span>Grammar</span>
@@ -90,6 +98,32 @@
         <button id="saveSettings" class="btn btn-primary">Save</button>
         <button id="cancelSettings" class="btn">Cancel</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Terms Modal -->
+  <div id="termsModal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content modal-large">
+      <div class="terms-header">
+        <h2 id="termsTitle">单词语法本</h2>
+        <div class="terms-actions">
+          <button id="downloadTermsBtn" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            下载
+          </button>
+          <button id="closeTermsBtn" class="btn">关闭</button>
+        </div>
+      </div>
+      <div class="terms-tabs">
+        <button class="terms-tab active" data-tab="all">全部</button>
+        <button class="terms-tab" data-tab="vocabulary">单词</button>
+        <button class="terms-tab" data-tab="grammar">语法</button>
+        <button class="terms-tab" data-tab="idiom">地道表达</button>
+      </div>
+      <div id="termsList" class="terms-list"></div>
     </div>
   </div>
 

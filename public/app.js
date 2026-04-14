@@ -24,6 +24,15 @@ const playerPlaceholder = $('playerPlaceholder');
 const backBtn = $('backBtn');
 const videoLibrary = $('videoLibrary');
 const libraryGrid = $('libraryGrid');
+const viewTermsBtn = $('viewTermsBtn');
+const termsModal = $('termsModal');
+const termsTitle = $('termsTitle');
+const termsList = $('termsList');
+const closeTermsBtn = $('closeTermsBtn');
+const downloadTermsBtn = $('downloadTermsBtn');
+
+// Current video metadata
+let currentVideoTitle = '';
 
 // ===== Video Library =====
 async function loadLibrary() {
@@ -38,7 +47,7 @@ async function loadLibrary() {
 function renderLibrary(videos) {
   if (!videos.length) return;
   libraryGrid.innerHTML = videos.map(v => `
-    <div class="library-card" data-video-id="${v.videoId}">
+    <div class="library-card" data-video-id="${v.videoId}" data-video-title="${escapeAttr(v.title)}">
       <img class="library-thumb" src="https://img.youtube.com/vi/${v.videoId}/mqdefault.jpg" alt="${v.title}" />
       <div class="library-info">
         <h3>${v.title}</h3>
@@ -53,10 +62,140 @@ function renderLibrary(videos) {
   libraryGrid.querySelectorAll('.library-card').forEach(card => {
     card.addEventListener('click', () => {
       const videoId = card.dataset.videoId;
+      currentVideoTitle = card.dataset.videoTitle || '';
       videoUrlInput.value = `https://www.youtube.com/watch?v=${videoId}`;
       loadBtn.click();
     });
   });
+}
+
+// ===== Terms (Vocabulary/Grammar/Idiom) =====
+function collectTerms() {
+  // Collect all annotations, deduplicating by text+type
+  const map = new Map();
+  for (const analysis of Object.values(analysisData)) {
+    if (!analysis.annotations) continue;
+    for (const anno of analysis.annotations) {
+      const key = `${anno.type}:${anno.text}`;
+      if (map.has(key)) {
+        map.get(key).count++;
+      } else {
+        map.set(key, {
+          text: anno.text,
+          type: anno.type,
+          explanation: anno.explanation,
+          count: 1
+        });
+      }
+    }
+  }
+  return Array.from(map.values());
+}
+
+function renderTerms(filter = 'all') {
+  const allTerms = collectTerms();
+  if (allTerms.length === 0) {
+    termsList.innerHTML = '<div class="terms-empty">No terms yet. Please analyze the video first.</div>';
+    return;
+  }
+
+  const typeLabels = {
+    vocabulary: '单词 Vocabulary',
+    grammar: '语法 Grammar',
+    idiom: '地道表达 Idiom'
+  };
+
+  let html = '';
+
+  if (filter === 'all') {
+    // Group by type
+    for (const type of ['vocabulary', 'grammar', 'idiom']) {
+      const terms = allTerms.filter(t => t.type === type);
+      if (terms.length === 0) continue;
+      html += `<div class="terms-group">
+        <div class="terms-group-title">${typeLabels[type]} · ${terms.length}</div>`;
+      for (const t of terms) {
+        html += renderTermItem(t);
+      }
+      html += `</div>`;
+    }
+  } else {
+    const terms = allTerms.filter(t => t.type === filter);
+    if (terms.length === 0) {
+      termsList.innerHTML = '<div class="terms-empty">No terms in this category.</div>';
+      return;
+    }
+    html += `<div class="terms-group"><div class="terms-group-title">${typeLabels[filter]} · ${terms.length}</div>`;
+    for (const t of terms) html += renderTermItem(t);
+    html += `</div>`;
+  }
+
+  termsList.innerHTML = html;
+}
+
+function renderTermItem(t) {
+  const badgeLabels = { vocabulary: 'Vocab', grammar: 'Grammar', idiom: 'Idiom' };
+  return `<div class="term-item">
+    <div class="term-badge term-badge-${t.type}">${badgeLabels[t.type]}</div>
+    <div class="term-content">
+      <div class="term-word">${escapeHTML(t.text)}${t.count > 1 ? `<span class="term-count">×${t.count}</span>` : ''}</div>
+      <div class="term-explanation">${escapeHTML(t.explanation)}</div>
+    </div>
+  </div>`;
+}
+
+function openTermsModal() {
+  termsTitle.textContent = `单词语法本 · ${currentVideoTitle || ''}`.trim();
+  renderTerms('all');
+  // Reset tabs to "all"
+  termsModal.querySelectorAll('.terms-tab').forEach(tab => {
+    tab.classList.toggle('active', tab.dataset.tab === 'all');
+  });
+  termsModal.classList.remove('hidden');
+}
+
+function closeTermsModal() {
+  termsModal.classList.add('hidden');
+}
+
+function downloadTerms() {
+  const allTerms = collectTerms();
+  if (allTerms.length === 0) return;
+
+  const typeLabels = {
+    vocabulary: '单词 Vocabulary',
+    grammar: '语法 Grammar',
+    idiom: '地道表达 Idiom'
+  };
+
+  let content = `# ${currentVideoTitle || 'Korean Learning Terms'}\n\n`;
+  content += `来源: KoreanClip\n`;
+  content += `总数: ${allTerms.length} 个\n\n`;
+  content += `---\n\n`;
+
+  for (const type of ['vocabulary', 'grammar', 'idiom']) {
+    const terms = allTerms.filter(t => t.type === type);
+    if (terms.length === 0) continue;
+    content += `## ${typeLabels[type]} (${terms.length})\n\n`;
+    terms.forEach((t, i) => {
+      content += `${i + 1}. **${t.text}**${t.count > 1 ? ` (×${t.count})` : ''}\n`;
+      content += `   ${t.explanation}\n\n`;
+    });
+  }
+
+  // Create filename from video title (sanitized)
+  const safeTitle = (currentVideoTitle || 'korean-terms').replace(/[\\/:*?"<>|]/g, '_').slice(0, 50);
+  const filename = `${safeTitle}.md`;
+
+  const blob = new Blob([content], { type: 'text/markdown;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 function showLibrary() {
@@ -73,6 +212,7 @@ function hideLibrary() {
 function backToLibrary() {
   showLibrary();
   backBtn.classList.add('hidden');
+  viewTermsBtn.classList.add('hidden');
   videoUrlInput.value = '';
   playerPlaceholder.classList.remove('hidden');
   if (player) { player.destroy(); player = null; }
@@ -80,6 +220,7 @@ function backToLibrary() {
   subtitles = [];
   analysisData = {};
   currentActiveIndex = -1;
+  currentVideoTitle = '';
   analyzeBtn.disabled = true;
   analyzeBtn.textContent = 'AI Analyze';
   analyzeBtn.style.opacity = '1';
@@ -465,6 +606,9 @@ loadBtn.addEventListener('click', async () => {
     if (Object.keys(analysisData).length > 0) {
       analyzeBtn.textContent = '✓ Pre-analyzed';
       analyzeBtn.style.opacity = '0.7';
+      viewTermsBtn.classList.remove('hidden');
+    } else {
+      viewTermsBtn.classList.add('hidden');
     }
   } catch (err) {
     alert('Failed to load: ' + err.message);
@@ -480,6 +624,19 @@ videoUrlInput.addEventListener('keydown', (e) => {
 
 analyzeBtn.addEventListener('click', analyzeSubtitles);
 backBtn.addEventListener('click', backToLibrary);
+
+// Terms modal
+viewTermsBtn.addEventListener('click', openTermsModal);
+closeTermsBtn.addEventListener('click', closeTermsModal);
+downloadTermsBtn.addEventListener('click', downloadTerms);
+termsModal.querySelector('.modal-overlay').addEventListener('click', closeTermsModal);
+termsModal.querySelectorAll('.terms-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    termsModal.querySelectorAll('.terms-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderTerms(tab.dataset.tab);
+  });
+});
 
 // Settings modal
 settingsBtn.addEventListener('click', () => {

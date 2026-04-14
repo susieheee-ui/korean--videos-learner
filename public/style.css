@@ -537,6 +537,169 @@ body {
 
 .hidden { display: none !important; }
 
+/* Control Buttons Group */
+.control-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Terms Modal */
+.modal-content.modal-large {
+  width: 720px;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.terms-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--border);
+}
+
+.terms-header h2 {
+  font-size: 17px;
+  font-weight: 800;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.terms-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.terms-actions .btn {
+  white-space: nowrap;
+}
+
+.terms-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 12px 20px 0;
+  border-bottom: 2px solid var(--border);
+}
+
+.terms-tab {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: -2px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.terms-tab:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.terms-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.terms-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 24px 24px;
+}
+
+.terms-group {
+  margin-bottom: 20px;
+}
+
+.terms-group-title {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-tertiary);
+  margin-bottom: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.terms-group:first-child .terms-group-title {
+  border-top: none;
+  padding-top: 0;
+}
+
+.term-item {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.term-item:last-child {
+  border-bottom: none;
+}
+
+.term-badge {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.term-badge-vocabulary { background: var(--vocab-bg); color: var(--vocab-color); }
+.term-badge-grammar { background: var(--grammar-bg); color: var(--grammar-color); }
+.term-badge-idiom { background: var(--idiom-bg); color: var(--idiom-color); }
+
+.term-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.term-word {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+  word-break: keep-all;
+}
+
+.term-explanation {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.term-count {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.terms-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+}
+
 /* Modal */
 .modal {
   position: fixed;
