@@ -114,14 +114,14 @@ body {
 }
 
 .btn-primary {
-  background: var(--blue);
+  background: var(--primary);
   color: white;
-  border-color: #1899d6;
-  box-shadow: 0 3px 0 #1899d6;
+  border-color: var(--primary-dark);
+  box-shadow: 0 3px 0 var(--primary-dark);
 }
 
 .btn-primary:hover {
-  background: #1899d6;
+  background: var(--primary-dark);
 }
 
 .btn-primary:active {
@@ -130,14 +130,14 @@ body {
 }
 
 .btn-accent {
-  background: var(--primary);
+  background: linear-gradient(135deg, #7c5cfc, #ff6b9d);
   color: white;
   border-color: var(--primary-dark);
   box-shadow: 0 3px 0 var(--primary-dark);
 }
 
 .btn-accent:hover {
-  background: var(--primary-dark);
+  filter: brightness(0.95);
 }
 
 .btn-accent:active {
