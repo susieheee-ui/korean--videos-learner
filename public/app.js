@@ -338,20 +338,15 @@ async function fetchSubtitles(videoId) {
   return data.subtitles;
 }
 
-// Try to load pre-built analysis data for a video
-async function loadPrebuiltAnalysis(videoId) {
+// Try to load pre-built data (subtitles + analysis) for a video
+async function loadPrebuiltData(videoId) {
   try {
     const res = await fetch(`/data/${videoId}.json`);
-    if (!res.ok) return false;
+    if (!res.ok) return null;
     const data = await res.json();
-    if (data.analysis) {
-      for (const [idx, analysis] of Object.entries(data.analysis)) {
-        analysisData[parseInt(idx)] = analysis;
-      }
-      return true;
-    }
+    return data;
   } catch {}
-  return false;
+  return null;
 }
 
 async function analyzeSubtitles() {
@@ -416,21 +411,32 @@ loadBtn.addEventListener('click', async () => {
     return;
   }
 
-  showLoading('Loading subtitles...');
+  showLoading('Loading...');
   try {
-    subtitles = await fetchSubtitles(videoId);
     analysisData = {};
     hideLibrary();
+
+    // Try pre-built data first (works on Vercel without backend)
+    const prebuilt = await loadPrebuiltData(videoId);
+
+    if (prebuilt && prebuilt.subtitles) {
+      subtitles = prebuilt.subtitles;
+      if (prebuilt.analysis) {
+        for (const [idx, a] of Object.entries(prebuilt.analysis)) {
+          analysisData[parseInt(idx)] = a;
+        }
+      }
+    } else {
+      // Fallback to API (local dev with yt-dlp)
+      loadingText.textContent = 'Loading subtitles...';
+      subtitles = await fetchSubtitles(videoId);
+    }
+
     loadVideo(videoId);
-
-    // Try to load pre-built analysis (translations + annotations)
-    loadingText.textContent = 'Loading translations...';
-    const hasPrebuilt = await loadPrebuiltAnalysis(videoId);
-
     renderTranscript();
     analyzeBtn.disabled = false;
 
-    if (hasPrebuilt) {
+    if (Object.keys(analysisData).length > 0) {
       analyzeBtn.textContent = '✓ Pre-analyzed';
       analyzeBtn.style.opacity = '0.7';
     }
