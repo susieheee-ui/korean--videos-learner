@@ -11,9 +11,9 @@
   --text-secondary: #777;
   --text-tertiary: #ababab;
   --border: #e5e5e5;
-  --primary: #58cc02;
-  --primary-dark: #46a302;
-  --primary-light: #e5f8cc;
+  --primary: #7c5cfc;
+  --primary-dark: #6344e0;
+  --primary-light: #eeeaff;
   --blue: #1cb0f6;
   --blue-light: #e0f4ff;
   --purple: #ce82ff;
@@ -21,7 +21,7 @@
   --orange: #ff9600;
   --orange-light: #fff4e0;
   --red: #ff4b4b;
-  --header-bg: #58cc02;
+  --header-bg: #7c5cfc;
   --vocab-bg: #e0f4ff;
   --vocab-color: #1899d6;
   --vocab-border: #84d8ff;
@@ -31,7 +31,7 @@
   --idiom-bg: #f3e8ff;
   --idiom-color: #a855f7;
   --idiom-border: #d8b4fe;
-  --active-line: #f0fce4;
+  --active-line: #f5f2ff;
   --radius: 16px;
   --radius-sm: 12px;
   --shadow: 0 2px 0 rgba(0,0,0,0.08);
@@ -60,15 +60,15 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 0 #46a302;
+  box-shadow: 0 2px 0 #5a3fd6;
 }
 
 .logo {
   font-size: 22px;
   font-weight: 800;
-  color: white;
+  color: #fff;
   letter-spacing: -0.5px;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: #fff;
 }
 
 .btn-icon {
@@ -444,7 +444,7 @@ body {
   padding: 3px 10px;
   border-radius: 8px;
   background: var(--primary-light);
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 700;
 }
 
