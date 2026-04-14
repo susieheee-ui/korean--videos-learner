@@ -21,6 +21,52 @@ const tooltip = $('tooltip');
 const loadingOverlay = $('loadingOverlay');
 const loadingText = $('loadingText');
 const playerPlaceholder = $('playerPlaceholder');
+const videoLibrary = $('videoLibrary');
+const libraryGrid = $('libraryGrid');
+
+// ===== Video Library =====
+async function loadLibrary() {
+  try {
+    const res = await fetch('/data/library.json');
+    if (!res.ok) return;
+    const videos = await res.json();
+    renderLibrary(videos);
+  } catch {}
+}
+
+function renderLibrary(videos) {
+  if (!videos.length) return;
+  libraryGrid.innerHTML = videos.map(v => `
+    <div class="library-card" data-video-id="${v.videoId}">
+      <img class="library-thumb" src="https://img.youtube.com/vi/${v.videoId}/mqdefault.jpg" alt="${v.title}" />
+      <div class="library-info">
+        <h3>${v.title}</h3>
+        <div class="library-channel">${v.channel}</div>
+        <div class="library-desc">${v.description}</div>
+        <div class="library-tags">${v.tags.map(t => `<span class="library-tag">${t}</span>`).join('')}</div>
+        <div class="library-stats">${v.subtitleCount} subtitles / ${v.annotationCount} annotations</div>
+      </div>
+    </div>
+  `).join('');
+
+  libraryGrid.querySelectorAll('.library-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const videoId = card.dataset.videoId;
+      videoUrlInput.value = `https://www.youtube.com/watch?v=${videoId}`;
+      loadBtn.click();
+    });
+  });
+}
+
+function showLibrary() {
+  videoLibrary.classList.remove('hidden');
+  transcriptContent.classList.add('hidden');
+}
+
+function hideLibrary() {
+  videoLibrary.classList.add('hidden');
+  transcriptContent.classList.remove('hidden');
+}
 
 // ===== Settings =====
 function loadSettings() {
@@ -374,6 +420,7 @@ loadBtn.addEventListener('click', async () => {
   try {
     subtitles = await fetchSubtitles(videoId);
     analysisData = {};
+    hideLibrary();
     loadVideo(videoId);
 
     // Try to load pre-built analysis (translations + annotations)
@@ -423,3 +470,4 @@ settingsModal.querySelector('.modal-overlay').addEventListener('click', () => {
 // ===== Init =====
 initYouTubeAPI();
 loadSettings();
+loadLibrary();

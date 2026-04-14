@@ -35,7 +35,7 @@
           <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5">
             <polygon points="5,3 19,12 5,21"/>
           </svg>
-          <p>Paste a YouTube URL above to start learning</p>
+          <p>Select a video from the library or paste a URL above</p>
         </div>
       </div>
       <!-- Controls under video -->
@@ -56,10 +56,14 @@
 
     <!-- Right: Transcript Panel -->
     <div class="transcript-panel">
-      <div id="transcriptContent" class="transcript-content">
-        <div class="transcript-placeholder">
-          <p>Transcript will appear here after loading a video</p>
-        </div>
+      <!-- Video Library (shown when no video loaded) -->
+      <div id="videoLibrary" class="video-library">
+        <h2 class="library-title">Video Library</h2>
+        <p class="library-subtitle">Pre-analyzed videos with translations and annotations</p>
+        <div id="libraryGrid" class="library-grid"></div>
+      </div>
+      <!-- Transcript (shown after loading) -->
+      <div id="transcriptContent" class="transcript-content hidden">
       </div>
     </div>
   </div>
