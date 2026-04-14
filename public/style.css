@@ -56,11 +56,11 @@ body {
   justify-content: space-between;
   padding: 0 24px;
   height: 56px;
-  background: var(--header-bg);
+  background: linear-gradient(135deg, #7c5cfc 0%, #ff6b9d 100%);
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 0 #5a3fd6;
+  box-shadow: 0 2px 0 rgba(124,92,252,0.3);
 }
 
 .logo {
